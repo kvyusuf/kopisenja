@@ -1,0 +1,195 @@
+<!-- index.html -->
+<!doctype html>
+<html lang="id">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>KopiSenja</title>
+
+  <!-- Google Font Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <!-- styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Header / Navbar (tidak dianimasikan) -->
+  <header class="site-header">
+    <nav class="navbar">
+      <div class="container nav-inner">
+        <!-- Logo text -->
+        <div class="logo">KopiSenja</div>
+
+        <!-- mobile toggle -->
+        <button class="nav-toggle" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <!-- Nav links -->
+        <ul class="nav-links">
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About Us</a></li>
+          <li><a href="#menu" class="nav-link">Menu</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Content wrapper: INI SAJA YG DI-ANIMASI (opacity) -->
+  <main class="content-wrapper">
+    <!-- HOME (fokus kita sekarang) -->
+    <section id="home" class="section home-section">
+      <div class="container home-content">
+        <h1>Selamat datang di KopiSenja</h1>
+        <p class="lead">Kopi hangat, suasana senja, ngobrol santai. Nikmati racikan spesial dari biji pilihan. Tempat
+          nongkrong yang cozy buat lu yang butuh jeda.</p>
+
+        <div class="cta-row">
+          <a href="#menu" class="btn primary nav-link">Lihat Menu</a>
+          <a href="#contact" class="btn ghost nav-link">Kontak & Reservasi</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Placeholder sections (boleh diisi nanti) -->
+    <section id="about" class="section about-section">
+      <div class="container about-inner">
+        <div class="about-img">
+          <img src="img/about.jpg" alt="Tentang KopiSenja">
+        </div>
+        <div class="about-text">
+          <h2>Tentang Kami</h2>
+          <p>
+            KopiSenja lahir dari cinta kami terhadap suasana sore dan aroma kopi yang menenangkan.
+            Sejak awal berdiri, tujuan kami sederhana: menghadirkan tempat nyaman untuk berbagi cerita, bekerja, atau
+            sekadar melepas penat.
+          </p>
+          <p>
+            Kami menggunakan biji kopi pilihan dari petani lokal, diproses dengan penuh perhatian.
+            Setiap cangkir adalah perjalanan rasa, dari kebun hingga ke meja lu.
+          </p>
+          <a href="#menu" class="btn primary nav-link">Lihat Menu Kami</a>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="menu" class="section menu-section">
+      <div class="container">
+        <h2>Menu Kami</h2>
+        <div class="menu-grid">
+          <!-- Item 1 -->
+          <div class="menu-item">
+            <div class="menu-img">
+              <img src="menu/kopi1.jpg" alt="Cappuccino">
+            </div>
+            <div class="menu-info">
+              <h3>Cappuccino</h3>
+              <p>Espresso, steamed milk, foam</p>
+              <span class="price">Rp25.000</span>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="menu-item">
+            <div class="menu-img">
+              <img src="menu/kopi2.jpg" alt="Latte">
+            </div>
+            <div class="menu-info">
+              <h3>Latte</h3>
+              <p>Espresso, steamed milk</p>
+              <span class="price">Rp28.000</span>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="menu-item">
+            <div class="menu-img">
+              <img src="menu/kopi3.jpg" alt="Espresso">
+            </div>
+            <div class="menu-info">
+              <h3>Espresso</h3>
+              <p>Pure espresso shot</p>
+              <span class="price">Rp18.000</span>
+            </div>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="menu-item">
+            <div class="menu-img">
+              <img src="menu/kopi4.jpg" alt="Mocha">
+            </div>
+            <div class="menu-info">
+              <h3>Mocha</h3>
+              <p>Espresso, chocolate, milk</p>
+              <span class="price">Rp30.000</span>
+            </div>
+          </div>
+
+          <!-- Item 5 -->
+          <div class="menu-item">
+            <div class="menu-img">
+              <img src="menu/kopi5.jpg" alt="Croissant">
+            </div>
+            <div class="menu-info">
+              <h3>Croissant</h3>
+              <p>Pastry butter lembut</p>
+              <span class="price">Rp20.000</span>
+            </div>
+          </div>
+
+          <!-- Item 6 -->
+          <div class="menu-item">
+            <div class="menu-img">
+              <img src="menu/kopi6.jpg" alt="Cheesecake">
+            </div>
+            <div class="menu-info">
+              <h3>Cheesecake</h3>
+              <p>Krim keju, base biskuit</p>
+              <span class="price">Rp32.000</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+      <div class="container contact-inner">
+
+        <!-- FORM -->
+        <div class="contact-form">
+          <h2>Hubungi Kami</h2>
+          <form>
+            <input type="text" placeholder="Nama" required>
+            <input type="text" placeholder="Alamat" required>
+            <textarea placeholder="Pesanan" rows="5" required></textarea>
+            <button type="submit" class="btn primary">Pesan Sekarang</button>
+          </form>
+        </div>
+
+        <!-- INFO -->
+        <div class="contact-info">
+          <h2>Alamat Kami</h2>
+          <p><strong>Telepon:</strong> 0812-3456-7890</p>
+          <p><strong>Alamat:</strong> Jl. Senja No. 45, Jakarta</p>
+          <p><strong>Sosial Media:</strong></p>
+          <ul>
+            <li><a href="#">Instagram: @kopisenja</a></li>
+            <li><a href="#">Facebook: Kopi Senja</a></li>
+            <li><a href="#">Twitter: @kopisenja</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- script tercecer, jangan inline -->
+    <script src="script.js" defer></script>
+</body>
+
+</html>
